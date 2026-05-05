@@ -1,7 +1,7 @@
 # ===== CONFIG =====
 CC = gcc
-CFLAGS = -Wall -Wextra -g -Iinclude -IZ:/SDL/x86_64-w64-mingw32/include
-LDFLAGS = -LZ:/SDL/x86_64-w64-mingw32/lib -lSDL3
+CFLAGS = -Wall -Wextra -g -Iinclude -Isrc -IZ:/SDL/x86_64-w64-mingw32/include
+LDFLAGS = -LZ:/SDL/x86_64-w64-mingw32/lib -lSDL3 -lSDL3_ttf
 
 SRC = $(wildcard src/*.c)
 OBJ = $(SRC:.c=.o)

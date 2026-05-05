@@ -1,4 +1,4 @@
-#indef PLAYER_H
+#ifndef PLAYER_H
 #define PLAYER_H
 
 typedef struct  
